@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-host-rajdeep-django
+spec:
+  rules:
+  - host: "django-todo.info"
+    http:
+      paths:
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service:
+              name: django-todo-service
+              port: 
+               number: 80
