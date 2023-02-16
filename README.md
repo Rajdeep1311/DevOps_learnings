@@ -7,13 +7,19 @@ An AWS instance is created and Jenkins is installed on that server. On the AWS m
 The server private IP is then used to access the port 8080. When the Jenkins dashboard appears, we must make sure to install the GitHub Integration plugin.
 A new job is created is created as Pipeline project of deployment. A suitable description is written, the project url from the github, the repository url is added and the branch name is also specified. GitHub hook trigger for GITScm polling is selected as the build trigger.
 
-/* docker-compose down */
-/* docker-compose up -d */
+```sh
+ docker-compose down
+ docker-compose up -d
+```
+
 The following code is used for running the container of the todo-app and this code is written in the Execute Shell and changes are applied.
 
 In the project GitHub repo settings, webhooks options is selected and a new webhook is added. A url is added in the following format
 
-/* http://<private -ip>:8080//github-webhook/ */
+```sh
+
+http://<private -ip>:8080//github-webhook/ 
+```
 
 The content type is selected as application/json and it is saved.
 
