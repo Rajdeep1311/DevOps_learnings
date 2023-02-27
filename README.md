@@ -25,3 +25,43 @@ The content type is selected as application/json and it is saved.
 The purpose of webhook is that, every time a new pipeline is created the Jenkins server hits in the repo so that any change in the code is also reflected in the creation of the pipeline and running of the application.
 
 
+# Managing Deployments using Kubernetes Engine
+
+Created a AWS t2.micro instance for using Kubernetes by installing minikube with the help of the following commands :
+
+```sh
+ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+ sudo install minikube-linux-amd64 /usr/local/bin/minikube
+```
+To start your cluster :
+
+```sh
+ minikube start
+```
+
+Now using the vim text editor in Linux YAML scripts are written for pod, which is the smallest unit in a K8s cluster, deployment file for creating a deployment for the django-todo app, service file for creating a service and ingress file for hosting.
+
+To run the files the following command is used :
+
+```sh
+ kubectl appy -f <file_name>
+```
+If the file contains namespace, which are a kind of tag to group certain files, the following command is used :
+
+```sh
+ kubectl appy -f <file_name> -n <namespace_used>
+```
+
+For viewing the running pods, deployments, services the following commands are used :
+
+```sh
+ kubectl get pods
+```
+```sh
+ kubectl get deployments
+```
+```sh
+ kubectl get services
+```
+
+ 
