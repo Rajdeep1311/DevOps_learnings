@@ -46,12 +46,12 @@ Now using the vim text editor in Linux YAML scripts are written for pod, which i
 To run the files the following command is used :
 
 ```sh
- kubectl appy -f <file_name>
+ kubectl apply -f <file_name>
 ```
 If the file contains namespace, which are a kind of tag to group certain files, the following command is used :
 
 ```sh
- kubectl appy -f <file_name> -n <namespace_used>
+ kubectl apply -f <file_name> -n <namespace_used>
 ```
 
 For viewing the running pods, deployments, services the following commands are used :
