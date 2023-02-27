@@ -1,5 +1,4 @@
 # DevOps_learnings
-A documentation of my DevOps learnings.
 
 # Jenkins CI/CD Project with GitHub Integration using GitHub Webhook
 
