@@ -29,7 +29,7 @@ The purpose of webhook is that, every time a new pipeline is created the Jenkins
 
 # Managing Deployments using Kubernetes Engine
 
-Created a AWS t2.micro instance for using Kubernetes by installing minikube in Linux with the help of the following commands :
+Created a AWS t2.medium instance for using Kubernetes by installing minikube in Linux with the help of the following commands :
 
 ```sh
  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
