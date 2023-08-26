@@ -1,0 +1,2 @@
+chmod 777 <script-name>
+sudo ./<script-name>
