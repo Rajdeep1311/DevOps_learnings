@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# We need to install Java before installing Jenkins
 # Update package list and upgrade existing packages
 sudo apt update
 sudo apt upgrade -y
