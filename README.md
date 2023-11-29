@@ -24,9 +24,6 @@ The content type is selected as application/JSON and it is saved.
 
 The purpose of webhook is that, every time a new pipeline is created the Jenkins server hits the repo so that any change in the code is also reflected in the creation of the pipeline and running of the application.
 
-
-
-
 # Managing Deployments using Kubernetes Engine
 
 Created an AWS t2.medium instance for using Kubernetes by installing minikube in Linux with the help of the following commands :
