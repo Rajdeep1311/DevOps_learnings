@@ -63,8 +63,6 @@ For viewing the running pods, deployments, and services the following commands a
  kubectl get services
 ```
 
- 
-
 # Shell Scripting Project
 
 A basic shell script in Linux which :
