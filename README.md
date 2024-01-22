@@ -1,6 +1,6 @@
 # DevOps Learnings
 
-# Jenkins CI/CD Project with GitHub Integration using GitHub Webhook
+## Jenkins CI/CD Project with GitHub Integration using GitHub Webhook
 
 An AWS instance is created and Jenkins is installed on that server. On the AWS management console, in the security section, the security group permissions are accessed and port 8080 (the port in which the Jenkins server runs) is given anywhere or private IPv4 access using inbound rules. 
 The server's private IP is then used to access the port 8080. When the Jenkins dashboard appears, we must install the GitHub Integration plugin.
@@ -24,7 +24,7 @@ The content type is selected as application/JSON and it is saved.
 
 The purpose of webhook is that, every time a new pipeline is created the Jenkins server hits the repo so that any change in the code is also reflected in the creation of the pipeline and running of the application.
 
-# Managing Deployments using Kubernetes Engine
+## Managing Deployments using Kubernetes Engine
 
 Created an AWS t2.medium instance for using Kubernetes by installing minikube in Linux with the help of the following commands :
 
@@ -63,7 +63,7 @@ For viewing the running pods, deployments, and services the following commands a
  kubectl get services
 ```
 
-# Shell Scripting Project
+## Shell Scripting Project
 
 A basic shell script in Linux which :
  * Greets the user according to the time of the day using conditional statements
